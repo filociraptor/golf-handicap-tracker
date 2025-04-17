@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import PlayerList from './components/PlayerList';
+import AddPlayerForm from './components/AddPlayerForm';
 
 function App() {
+  const [players, setPlayers] = useState(() => {
+    const saved = localStorage.getItem('golfPlayers');
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('golfPlayers', JSON.stringify(players));
+  }, [players]);
+
+  const addPlayer = (name) => {
+    setPlayers([...players, { name, scores: [] }]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: '2rem' }}>
+      <h1>Golf Handicap Tracker</h1>
+      <AddPlayerForm onAddPlayer={addPlayer} />
+      <PlayerList players={players} setPlayers={setPlayers} />
     </div>
   );
 }
