@@ -66,3 +66,15 @@ Use only the following colors in the UI:
 - [React Documentation](https://reactjs.org/)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+
+### Responsive Form Component Example
+
+```html
+<div class="max-w-md mx-auto p-4">
+  <form class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+    <input type="text" placeholder="First Name" class="flex-1 p-2 border rounded" />
+    <input type="text" placeholder="Last Name" class="flex-1 p-2 border rounded" />
+    <button type="submit" class="p-2 bg-blue-500 text-white rounded">Submit</button>
+  </form>
+</div>
+```
