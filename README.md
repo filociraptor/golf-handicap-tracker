@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Golf Handicap Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application for tracking golf handicaps and player scores.
 
-## Available Scripts
+## 🚀 Getting Started
 
-In the project directory, you can run:
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-### `npm start`
+### Installation
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Running the Application
+```bash
+npm start
+```
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎨 Design Guidelines
 
-### `npm test`
+To maintain a cohesive and user-friendly design across the application, please follow these guidelines when making UI changes:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✳️ Framework & Styling
+- **Use Tailwind CSS** for all styling.
+- Avoid inline styles or external CSS files unless absolutely necessary.
 
-### `npm run build`
+### 🧠 User Experience
+- Prioritize **clarity**, **simplicity**, and **intuitive interactions**.
+- Design for responsiveness and accessibility (e.g. use semantic HTML and appropriate contrast).
+- Prefer UI patterns that are familiar and minimize user learning curve.
+- Ensure form fields, buttons, and interactive components are clearly styled and easy to use.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🎨 Color Palette
+Use only the following colors in the UI:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Color Name | HEX Code | Example Usage |
+|------------|----------|----------------|
+| Yellow     | `#FCF400` | Highlights, accents, call-to-action elements |
+| Green      | `#005E23` | Buttons, success states, headers |
+| Red        | `#ED0030` | Errors, alerts, destructive actions |
+| White      | `#FFFFFF` | Backgrounds, text |
+| Gray       | `#AEB4A9` | Borders, placeholders, secondary text |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🧪 Component Style Notes
+- Use **rounded corners**, **soft shadows**, and **ample spacing** for a modern, clean aesthetic.
+- Default to `rounded-2xl`, `shadow-md`, and `p-4` where appropriate.
+- Prefer `text-base`, `text-lg`, and `text-xl` for clarity and hierarchy.
+- Use Tailwind's utility classes to ensure consistency and speed up development.
 
-### `npm run eject`
+## 🛠️ Development
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📚 Learn More
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React Documentation](https://reactjs.org/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)

@@ -17,10 +17,12 @@ function App() {
   };
 
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>Golf Handicap Tracker</h1>
-      <AddPlayerForm onAddPlayer={addPlayer} />
-      <PlayerList players={players} setPlayers={setPlayers} />
+    <div className="min-h-screen bg-white p-8">
+      <h1 className="text-4xl font-bold text-green mb-8">Golf Handicap Tracker</h1>
+      <div className="max-w-4xl mx-auto">
+        <AddPlayerForm onAddPlayer={addPlayer} />
+        <PlayerList players={players} setPlayers={setPlayers} />
+      </div>
     </div>
   );
 }
