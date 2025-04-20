@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PlayerList from './components/PlayerList';
 import AddPlayerForm from './components/AddPlayerForm';
+import ScorecardForm from './components/ScorecardForm';
 
 function App() {
   const [players, setPlayers] = useState(() => {
@@ -19,7 +20,8 @@ function App() {
   return (
     <div className="min-h-screen bg-white p-8">
       <h1 className="text-4xl font-bold text-green mb-8">Golf Handicap Tracker</h1>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto space-y-8">
+        <ScorecardForm />
         <AddPlayerForm onAddPlayer={addPlayer} />
         <PlayerList players={players} setPlayers={setPlayers} />
       </div>
